@@ -110,4 +110,10 @@ public final class JavaProfiles implements Profiles {
 	Set<String> following(String userId) {
 		return following.get( userId );
 	}
+
+	@Override
+	public Result<Integer> likesOfPosts(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

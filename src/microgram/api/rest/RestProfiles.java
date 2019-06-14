@@ -53,4 +53,8 @@ public interface RestProfiles {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	List<Profile> search(@QueryParam("query") String prefix);
+	
+	@GET
+	@Path("/{userId}/likes")
+	int likesOfPosts(@PathParam("userId") String userId);
 }

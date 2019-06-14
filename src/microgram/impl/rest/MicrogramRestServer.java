@@ -36,8 +36,8 @@ public class MicrogramRestServer {
 
 		System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", "OFF");
 		System.setProperty("java.net.preferIPv4Stack", "true");
-	//	System.setProperty("javax.net.ssl.keyStore", "microgram.ks");
-	//	System.setProperty("javax.net.ssl.keyStorePassword", "123456");
+		System.setProperty("javax.net.ssl.keyStore", "microgram.ks");
+		System.setProperty("javax.net.ssl.keyStorePassword", "123456");
 		
 		Log.setLevel(Level.INFO);
 
@@ -55,7 +55,7 @@ public class MicrogramRestServer {
 		config.register(new PrematchingRequestFilter());
 		config.register(new GenericExceptionMapper());
 
-		JdkHttpServerFactory.createHttpServer(URI.create(serverURI.replace(ip, "0.0.0.0")), config, SSLContext.getDefault());
+		JdkHttpServerFactory.createHttpServer(URI.create(serverURI.replace(ip, "0.0.0.0")), config,SSLContext.getDefault());
 
 		Log.fine(String.format("Posts+Profiles Combined Rest Server ready @ %s\n", serverURI));
 	}

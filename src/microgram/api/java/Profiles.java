@@ -64,4 +64,8 @@ public interface Profiles {
 	 * @return (OK,Boolean), NOT_FOUND if either profile does not exist
 	 */
 	Result<Boolean> isFollowing(String userId1, String userId2);
+	
+	//metodo de Q B
+	Result<Integer> likesOfPosts(String userId);
+	
 }

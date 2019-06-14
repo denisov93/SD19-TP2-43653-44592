@@ -46,4 +46,10 @@ public class ReplicatedProfilesResources extends RestResource implements RestPro
 	public List<Profile> search(String prefix) {
 		return super.resultOrThrow( replicator.search(prefix));
 	}
+
+	@Override
+	public int likesOfPosts(String userId) {
+		// TODO Auto-generated method stub
+		return super.resultOrThrow( replicator.likesOfPosts(userId));
+	}
 }

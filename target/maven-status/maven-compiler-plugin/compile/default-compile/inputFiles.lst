@@ -16,17 +16,14 @@
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/utils/Random.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/utils/IP.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/impl/rest/utils/PrematchingRequestFilter.java
-/home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/dropbox/CreateDirectory.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/api/rest/RestProfiles.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/dropbox/DropboxClient.java
-/home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/dropbox/testDownload.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/impl/rest/posts/replicated/ReplicatedPostsResources.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/utils/Log.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/api/java/Posts.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/impl/rest/posts/RestPostsResources.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/impl/rest/MicrogramRestServer.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/impl/rest/posts/replicated/_TODO_PostsReplicator.java
-/home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/dropbox/testUpload.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/utils/Hash.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/utils/JSON.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/impl/rest/replication/OrderedExecutor.java
@@ -59,5 +56,3 @@
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/microgram/impl/rest/RestResource.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/discovery/Discovery.java
 /home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/dropbox/msgs/AccessFileV2Args.java
-/home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/dropbox/ListDirectory.java
-/home/alex/git/sd2019-tp2-code/SD2019-Microgram-TP2-Code/SD2019-Microgram-TP2-Code/src/dropbox/testDelete.java

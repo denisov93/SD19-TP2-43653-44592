@@ -180,7 +180,7 @@ public class _TODO_MongoPosts implements Posts {
 		
 			while(it1.hasNext()) {
 				TableR user = it1.next();
-				
+				//System.out.println(user.getField2());
 				MongoCursor<Post> it2 = dbPosts.find(Filters.eq("ownerId",user.getField2() )).iterator();
 				while(it2.hasNext()) {
 					ls.add(it2.next().getPostId());

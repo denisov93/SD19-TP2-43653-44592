@@ -38,7 +38,8 @@ public class _TODO_MongoProfiles implements Profiles {
     private MongoCollection<Profile> dbProfiles;
     private MongoCollection<TableR> followers;
     private MongoCollection<Post> dbPosts;
-   
+    private MongoCollection<TableR> dbLike;
+    
     public _TODO_MongoProfiles() {
         MongoClient mongo = new MongoClient("mongo1");
            
@@ -49,6 +50,8 @@ public class _TODO_MongoProfiles implements Profiles {
             dbProfiles = dbName.getCollection("Profiles", Profile.class);
             dbPosts = dbName.getCollection("Posts", Post.class);
            
+            dbLike = dbName.getCollection("Likes", TableR.class);
+            
             followers = dbName.getCollection("Followers", TableR.class);
                 
             dbProfiles.createIndex(Indexes.hashed("userId"));
@@ -60,6 +63,12 @@ public class _TODO_MongoProfiles implements Profiles {
             followers.createIndex(Indexes.ascending("field1","field2"),new IndexOptions().unique(true));
             
             followers.createIndex(Indexes.hashed("field2"));
+            
+            dbLike.createIndex(Indexes.hashed("field1"));
+
+        	dbLike.createIndex(Indexes.ascending("field1","field2"),new IndexOptions().unique(true));
+        	
+        	dbLike.createIndex(Indexes.hashed("field2"));
          }
     
 	
@@ -158,5 +167,24 @@ public class _TODO_MongoProfiles implements Profiles {
 			x.printStackTrace();
 			return Result.error(Result.ErrorCode.NOT_FOUND);
 		}
+	}
+
+
+	//Para Questao B
+	@Override
+	public Result<Integer> likesOfPosts(String userId) {
+		MongoIterable<Profile> prof = dbProfiles.find(Filters.eq("userId", userId));
+		if(!prof.iterator().hasNext()) return Result.error(Result.ErrorCode.NOT_FOUND);
+		
+		MongoIterable<Post>table = dbPosts.find(Filters.eq("ownerId", userId));
+		int count = 0;	
+		for(Post p : table){
+			String postId = p.getPostId();
+			
+			long targets = dbLike.countDocuments(Filters.eq("field1" , postId));
+			count += (int) targets;
+		}
+
+		return Result.ok(count);
 	}
 }

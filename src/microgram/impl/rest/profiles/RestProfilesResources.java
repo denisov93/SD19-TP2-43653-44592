@@ -44,4 +44,10 @@ public class RestProfilesResources extends RestResource implements RestProfiles 
 	public void deleteProfile(String userId) {
 		super.resultOrThrow(impl.deleteProfile(userId));
 	}
+
+	@Override
+	public int likesOfPosts(String userId) {
+		// TODO Auto-generated method stub
+		return super.resultOrThrow(impl.likesOfPosts(userId));
+	}
 }
